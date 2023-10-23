@@ -1,38 +1,111 @@
+/* App.css */
+
+/* Style for the entire app container */
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style for the menu container */
+.menu {
+  /* background-color: #333;  */
+  padding: 10px;
+  color: white; /* Text color for the menu */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style for the top navigation links */
+.topnav {
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(59, 58, 58); /* Text color for the links */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style for the active link */
+.topnav a.active {
+  background-color: #f4faf4;
+  font-weight: bold;
+  
+}
+
+
+/* Style on hover for the links */
+.topnav a:hover {
+  background-color: #f7f5f5; /* Background color on hover */
+}/* Card.css */
+
+.container {
+  height: 40px;
+  width: 60%;
+  background-color: rgb(248, 247, 247);
   display: flex;
-  flex-direction: column;
+  border-bottom: 1px solid black;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.container:hover{
+  background-color: rgb(194, 189, 189);
+}
+.image {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-right: 10px;
+}
+
+.imageText {
   color: white;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.cardTitle {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.amount {
+  margin-left: 400px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.percentage {
+  margin-left: 140px;
+  display: flex;
+  flex-direction: column;
+}
+
+.values p {
+  margin-left: 100px;
+  text-align: center;
+  color: green;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Chart css */
+.charts{
+  height: 200px;
+  width: full;
 }
