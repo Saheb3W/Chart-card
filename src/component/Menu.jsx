@@ -5,6 +5,7 @@ const  Menu=()=> {
   
     const handleItemClick = (item) => {
       setSelectedItem(item);
+      console.log(item)
     };
   
     return (
